@@ -1,5 +1,5 @@
 {
-    "name": "pixelfear/laravel-view-debug",
+    "name": "marvinwank/laravel-view-debug",
     "description": "Debug Laravel views",
     "license": "MIT",
     "require": {
