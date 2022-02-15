@@ -7,7 +7,7 @@ use Pixelfear\ViewDebug\ViewDebugServiceProvider;
 
 class TestCase extends TestbenchTestCase
 {
-    protected function getPackageProviders($app)
+    protected function getPackageProviders($app): array
     {
         return [ViewDebugServiceProvider::class];
     }

@@ -3,7 +3,6 @@
 namespace Tests;
 
 use Illuminate\Support\Facades\View;
-use Tests\TestCase;
 
 class BasicTest extends TestCase
 {

@@ -6,7 +6,7 @@ use Illuminate\Contracts\View\Engine;
 
 class DebugEngine implements Engine
 {
-    protected $engine;
+    protected DebugEngine $engine;
 
     public function __construct($engine)
     {

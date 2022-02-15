@@ -6,7 +6,7 @@ use Illuminate\View\Engines\EngineResolver;
 
 class DebugEngineResolver extends EngineResolver
 {
-    protected $resolver;
+    protected EngineResolver $resolver;
 
     public function __construct(EngineResolver $resolver)
     {
@@ -15,10 +15,10 @@ class DebugEngineResolver extends EngineResolver
 
     public function register($engine, $resolver)
     {
-        return $this->resolver->register($engine, $resolver);
+        $this->resolver->register($engine, $resolver);
     }
 
-    public function resolve($engine)
+    public function resolve($engine): DebugEngine
     {
         return new DebugEngine($this->resolver->resolve($engine));
     }
